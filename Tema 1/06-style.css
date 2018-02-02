@@ -1,0 +1,47 @@
+h1 {
+	font-size: 2em;
+	font-variant: small-caps;
+}
+
+
+h2 {
+	color: rgb(200, 150, 216);
+	font-family: Georgia, Times, serif;
+	font-size: 1.5em;
+}
+
+h3 {
+	color: rgb(155, 60, 175);
+	font-family: Georgia, Times, serif;
+	font-size: 1.25em;
+}
+
+p{
+	color: rgb(20,20, 180);
+	font-family: arial, verdana, sans-serif;
+	font-size: 0.8em; /*pt: puntos de tamaño, px: píxeles de tamaño*/
+}
+
+footer {
+	font-family: courier, arial, verdana, sans-serif;
+	font-size: .5em;
+}
+
+#my-paragraph {
+	color: rgba(20,20,180,0.5);
+}
+
+.my-text {
+	font-size: 0.65em;
+}
+
+#fg {
+	color: rgb(240,160,30)
+}
+			
+.centered {
+	text-align: center;
+}
+.justified {
+	text-align: justify;
+}
