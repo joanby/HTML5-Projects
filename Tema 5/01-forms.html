@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularios</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+		
+			.tab
+			{
+				margin-left: 40px;
+			}	
+			
+		</style>
+	</head>
+	<body>
+		<h1>Formularios</h1>
+		<form action="#" method="get">
+			<!--Nombre de usuario: -->
+			Nombre de usuario:
+			<input type="text" name="username" id="username" placeholder="Escribe tu nombre de usuario">
+			<br> 
+			Contraseña:
+			<input type="password" name="password" id="password" placeholder="Escribe tu contraseña">
+			<br>
+			Correo electrónico:
+			<input type="email" name="email" id="email" placeholder="Introduce tu correo">
+			<br>
+			Género:
+			<br>
+			<input type="radio" value="m" name="gender" class="tab">Masculino<br>
+			<input type="radio" value="f" name="gender" class="tab">Femenino
+			<br>
+			Edad: 
+			<br>
+				<input type="radio" value="0" name="age" class="tab">Menor de 18 años<br>
+				<input type="radio" value="1" name="age" class="tab">19-39<br>
+				<input type="radio" value="2" name="age" class="tab">40-59<br>
+				<input type="radio" value="3" name="age" class="tab">60 o más	
+			<br>
+			Lenguajes de programación que conoces:
+			<br>
+				<input type="checkbox" value="html" name="languaje" class="tab">HTML5<br>
+				<input type="checkbox" value="js" name="languaje" class="tab">Javascript<br>
+				<input type="checkbox" value="css" name="languaje" class="tab">CSS<br>
+				<input type="checkbox" value="swift" name="languaje" class="tab">Swift
+			<br>	
+			<input type="submit" value="Enviar información"/>
+			<input type="reset" value="Reiniciar información"/>
+		</form>
+	</body>
+</html>
