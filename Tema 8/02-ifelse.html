@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>If Else</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>If Else</h1>
+		<script lang="javascript" type="text/javascript">
+				
+				var highscore = 2000;
+				var currentscore = 2400;
+				
+				if(currentscore > highscore)
+				{
+					//EL jugador ha conseguido una puntuación superior a la máxima conocida hasta el momento
+					highscore = currentscore;
+					document.write("Enhorabuena! Has conseguido un nuevo récord!!!");
+				} else 
+				{
+					//El jugador no ha superado la puntuación máxima conocida...
+					document.write("Buen intento, pero no has superado tu récord =(");
+				}
+				
+				
+				var examscore = 4.5;
+				var finalscore;
+				
+				if(examscore < 5) //Aquí tenemos menos de un 5
+				{
+					finalscore = "Suspendido";
+				} else if(examscore < 7) //Hemos sacado entre un 5 y un 7
+				{
+					finalscore = "Aprobado";
+				} else if(examscore < 9) // Hemos sacado entre un 7 y un 9
+				{
+					finalscore = "Notable";
+				} else if(examscore < 10) //Hemos sacado entre un 9 y un 10
+				{
+					finalscore = "Excelente";	
+				} else { //Hemos sacado un 10 redondo!
+					finalscore = "Matrícula de Honor";
+				}
+				
+				document.write("<p>La nota del estudiante es un " +examscore+ " y por tanto le pondremos: "+finalscore + "</p>");
+					
+		</script>
+	</body>
+</html>

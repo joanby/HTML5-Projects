@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Más tablas</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Más formas de crear tablas</h1>
+		
+		<table>
+			<caption>Título de la tabla</caption><!-- El caption es el primero de los hijos de table-->
+			
+			<thead><!-- ============================= thead viene después del caption -->
+				<tr scope="colgroup">
+					<th scope="col">Header #1</th>
+					<th scope="col">Header #2</th>
+				</tr>
+			</thead><!-- fin thead-->
+			
+			<tbody><!-- ============================= tbody viene después del thead -->
+				<tr scope="rowgroup">
+					<td scope="row">Contenido 1</td>
+					<td scope="row">Contenido 2</td>
+				</tr>
+			</tbody><!-- fin tbody -->
+			
+			<tfoot><!-- El tfoot se coloca justo después del tbody, pero fuera del mismo!!!-->
+				
+				<tr>
+					<td>Footer 1</td>
+					<td>Footer 2</td>
+				</tr>
+				
+			</tfoot><!-- fin tfoot-->
+			
+		</table>
+		
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		
+	</head>
+	<body>
+		<h1>¿Puedo ir a votar?</h1>
+		
+		<script lang="javascript" type="text/javascript">
+			/*if(condicion)
+			{
+				ejecutar solo si la condición es verdadera
+			}*/
+			var age = 29;
+			
+			if(age>=18)
+			{
+				document.write("<p>Sí, puedes ir a votar</p>");
+			}
+			
+			
+			/*
+				==   -> igualdad del valor
+				===  -> igualdad del valor y tipo de dato
+				"1" == 1 -> TRUE
+				"1" === 1 -> FALSO
+				>    -> Valor mayor estricto que otro
+				<    -> Valor menor estricto que otro 
+				>=   -> Valor mayor o igual que otro
+				<=   -> Valor menor o igual que otro
+				!=   -> No igual que
+			*/
+			
+			var name = "Juan Gabriel";
+			if (name == "Juan Gabriel")
+			{
+				document.write("Buenas profesor, puedes acceder a las estadísticas del curso");	
+			}
+			
+			
+			//&& -> AND  (x && y) -> es cierto si x e y son ambas verdad
+			age = 9;
+			var isCitizen = true;
+			if((age>=18) && (isCitizen))
+			{
+				document.write("<p>Puedes ir a votar.</p>");
+			}
+			
+			//|| -> OR (x || y) -> es cierto si o bien x es verdad, o bien y es verdad (o bien ambas son verdad)
+			if(age>=18 || name == "Juan Gabriel")
+			{
+				document.write("<p>Hola o bien te llamas como el profe o bien eres mayor de edad</p>");
+			}
+			
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>La criba de Eratóstenes</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>La criba de Eratóstenes</h1>
+		
+		<script lang="javascript" type="text/javascript">
+			
+			var n = 0
+			
+			while (n == 0)
+			{
+				n = parseInt(prompt("Escribe un número positivo y calcularemos cuales son los números primos menores que él"));
+				
+				if(n<0 || n > 1000000)
+				{
+					n = 0;
+				}
+			}
+			
+			//Al llegar aquí, n ya no vale cero
+			var nPrime = 0;
+			for(var i = 2; i < n; i ++){
+				var isPrime = true;
+				for(var j = 2; j * j <= i && isPrime; j++){
+					if(i % j == 0)
+					{
+						//i és un múltiplo de j, y por tanto no es primo...
+						isPrime = false;
+					}
+				}
+				if(isPrime)
+				{
+					nPrime ++;
+					document.write("<p>" + i + " es el número primo en la posición " + nPrime + "</p>");
+				}
+			}
+			
+				
+		</script>
+		
+	</body>
+</html>

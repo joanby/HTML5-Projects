@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Diálogos en forma de prompt box</h1>
+		<script lang="javascript" type="text/javascript">
+			
+			var age = prompt("¿Cuantos años tienes?", "");
+			
+			document.write("Nos has dicho que tienes "+age+" años");
+			
+			if(age < 18){
+				document.write("<p>No se permite la entrada a menores</p>");
+			} else {
+				document.write("<p>Eres mayor de edad, puedes pasar</p>");
+			}
+			
+		</script>
+	</body>
+</html>
