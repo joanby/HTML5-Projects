@@ -24,8 +24,12 @@
 			document.write("La primera letra 's' aparece en: " + phrase.indexOf("s"));
 			document.write("<br/>La primera letra 'm' aparece en: " + phrase.indexOf("m"));
 			
-			var minID = Math.min(phrase.indexOf("a"), phrase.indexOf("e"), phrase.indexOf("i"), 
-								 phrase.indexOf("o"), phrase.indexOf("m"));
+			var minID = Math.min(Math.max(phrase.indexOf("a"),0), 
+								 phrase.indexOf("e"), 
+								 phrase.indexOf("i"), 
+								 phrase.indexOf("o"), 
+								 phrase.indexOf("u")
+								 );
 			document.write("<br/>La primera vocal aparece en : " + minID);
 			
 		</script>
