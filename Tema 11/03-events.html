@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Eventos en Javascript</title>
+		<meta charset="UTF-8">
+		
+		<script lang="javascript" type="text/javascript">
+			function buttonPressed(buttonID)
+			{
+				alert("Bieeeeeen! Has pulsado el botón " + buttonID + " =D");	
+			}
+			
+			function loadingPage()
+			{
+				alert("Holaaaa, bienvenido a nuestra página web!");	
+			}
+			
+			function mouseOver()
+			{
+				alert("Te has puesto sobre mi, pillín!");
+			}
+			
+			function unloadingPage()
+			{
+				alert("Hasta la vista, amigo!");
+			}
+		</script>
+		
+		
+	</head>
+	<body onload="loadingPage()"
+		window.onunload="unloadingPage()">
+		<h1>Eventos en Javascript</h1>
+		
+		<h2>Evento On Click</h2>
+		<input type="button" value="Presioname!" onclick="buttonPressed(1)"/>
+		<input type="button" value="Presioname!" onclick="buttonPressed(2)"/>
+		<input type="button" value="Presioname!" onclick="buttonPressed(3)"/>
+		<input type="button" value="Presioname!" onclick="buttonPressed(4)"/>
+		
+		<input type="button" value="Ponte encima de mi" onmouseover="mouseOver()"/>
+
+	</body>
+</html>

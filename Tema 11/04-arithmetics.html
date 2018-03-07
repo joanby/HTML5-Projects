@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Aritmética elemental con JS</title>
+		<meta charset="UTF-8">
+		<script lang="javascript" type="text/javascript">
+			function simpleArithmetics()
+			{
+				var x = parseInt(prompt("Introduce el primer número a operar"));
+				var y = parseInt(prompt("Introduce el segundo número a operar"));
+				var op = prompt("Introduce la operación que quieres hacer: +, -, *, /");
+				
+				switch(op)
+				{
+					case "+":
+						var sum = x+y;
+						alert(x + " + " + y +" = " + sum);
+					break;
+					
+					case "-":
+						var diff = x-y;
+						alert("La resta es "+diff);
+					break;
+					
+					case "*":
+						var prod = x*y;
+						alert("El producto es "+prod);
+					break;
+					
+					case "/":
+						if (y==0)
+						{
+							alert("No puedes dividir por cero! Melóoon!!!!");
+						} else 
+						{
+							var div = x/y;
+							alert("La división es "+div);
+						}
+					break;
+				}
+				
+			}	
+			
+			function circle(){
+				var r = NaN;
+				while(isNaN(r))
+				{
+					r = parseFloat(prompt("Introduce el radio de la circumferencia"));
+				} 
+				var pi = Math.PI;
+				var per = 2.0 * pi * r;
+				alert("La circumferencia de radio " + r + " tiene perímetro "+ per);
+				
+			}	
+		</script>
+	</head>
+	<body>
+		<h1>Aritmética elemental con JS</h1>
+		<input type="button" value="Aritmética con JS" onclick="simpleArithmetics()"/>
+		<input type="button" value="Perímetro de una circumferencia" onclick="circle()"/>
+	</body>
+</html>

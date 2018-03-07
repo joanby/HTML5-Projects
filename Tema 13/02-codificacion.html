@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1></h1>
+		<script lang="javascript" type="text/javascript">
+			var message = prompt("Introduce aquí tu mensaje y te lo vamos a codificar");
+			
+			var code = parseInt(prompt("Introduce la clave de codificación"));
+			
+			var codedMessage = "";
+			
+			for(var i = 0; i < message.length; i++)
+			{
+				var charCode = message.charCodeAt(i);
+				charCode += code;
+				var charMsg = String.fromCharCode(charCode);
+				
+				codedMessage += charMsg;
+			}
+			
+			document.write(codedMessage);
+				
+		</script>
+	</body>
+</html>

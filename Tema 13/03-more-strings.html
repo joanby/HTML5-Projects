@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1></h1>
+		<script lang="javascript" type="text/javascript">
+			var phrase = "Si tu no luchas por tus sueños, alguien te pagará para que luches por los suyos";
+			
+			document.write(phrase + "<br/>");
+			
+			var newPhrase = phrase.replace("sueños", "pokemons");
+			
+			document.write(newPhrase + "<br/>");
+			
+			document.write(phrase + "<br/>");
+			
+			
+			document.write(phrase.replace(/[AEIOUaeiou]/g, "*")+"<br/>");
+
+
+
+			var names = "Juan Gabriel, María, Margarita, John, Elvis, David, Antonia, Juan José";
+			var moreNames = names.split(", ");
+			for(x in moreNames)
+			{
+				document.write(moreNames[x] + "<br/>") ;
+			}
+			
+			
+			
+			var correo = "    juangabriel@frogames.es          ";
+			document.write("'"+correo.trim()+"'");
+			
+		</script>
+	</body>
+</html>

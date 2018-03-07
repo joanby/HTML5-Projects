@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<script lang="javascript" type="text/javascript">
+			function loopArray(theArray){
+				for(x in theArray)
+				{
+					document.write("Iter: " + x + " Objeto : " + theArray[x] + "</br>");
+				}
+			}	
+		</script>
+	</head>
+	<body>
+		<h1>Push y Pop</h1>
+		<script lang="javascript" type="text/javascript">
+			var grades = [8.5, 9.3, 7.0, 6.3, 5.5, 9.4, 8.8, 7.9, 9.5, 9.5];
+			
+			document.write("Longitud del array : " + grades.length+"<br/>");
+			//grades.push(nota1, nota2, nota3, nota4,...);
+			grades.push(10.0, 6.7);
+			document.write("Longitud del array : " + grades.length + "<br/>");
+			
+			loopArray(grades);
+			
+			document.write("=============================================<br/>");
+			
+			var poppedGrade = grades.pop();
+			
+			document.write("Acabamos de retirar el objeto: " + poppedGrade + "</br>");
+			loopArray(grades);
+			
+		</script>
+	</body>
+</html>

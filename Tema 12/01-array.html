@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1></h1>
+		<script lang="javascript" type="text/javascript">
+			
+			// 1 - Método estándar del constructor
+			var people = new Array();	
+			
+			people[0] = "Juan Gabriel";
+			people[1] = "Ricardo";
+			people[2] = "Margarita";
+			people[3] = "Isabel";
+			people[4] = "María";
+			
+			// 2 - Método condensado
+			var food = new Array("Sushi", "Lomo a la pimienta", "Rodaballo", "Espaguetti", "Pizza");
+				
+			// 3 - Método del array literal
+			var companies = ["Apple", "Google", "Udemy", "Facebook", "Unity"];
+			
+			
+			/*alert("La tercera persona es : " + people[3]);
+			alert("La tercera comida es : " + food[3]);
+			alert("La tercera empresa es : " + companies[3]);
+			
+			
+			
+			var dim = people.length
+			alert("El array de personas contiene " + dim);*/
+			
+			
+			for(var i = 0; i < people.length; i++)
+			{
+				document.write(people[i] + "<br/>");
+			}
+			
+			people[2] = "Pedro";
+			document.write("==========================<br/>")
+			
+			for(var i = 0; i < people.length; i++)
+			{
+				document.write(people[i] + "<br/>");
+			}
+			
+			
+			
+		</script>
+	</body>
+</html>
