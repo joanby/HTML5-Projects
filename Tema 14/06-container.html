@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Content e Inner HTML</title>
+		<meta charset="UTF-8">
+		<script lang="javascript" type="text/javascript">
+			function changeInnerHTML()
+			{
+				document.getElementById("content").innerHTML = "<h2>Nuevo contenido</h2><p>El contenido ha cambiado, ¿verdad?</p>";
+			}		
+		</script>
+	</head>
+	<body>
+		<div id="content">
+			<h1>Magnífico ejemplo final de JS, HTML y CSS</h1>
+			<p>Este es un párrafo de ejemplo. Será cambiado automáticamente a través de Inner HTML cuando accedamos a él.</p>
+		</div>
+		
+		<input type="button" value="Púlsame y verás!!" onclick="changeInnerHTML()"/>
+		
+		<script lang="javascript" type="text/javascript">
+					
+		</script>
+	</body>
+</html>

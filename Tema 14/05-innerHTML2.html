@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<script lang="javascript" type="text/javascript">
+			function processData(){
+				var firstname;
+				var lastname;
+				
+				firstname = document.getElementById("firstname").value;
+				lastname = document.getElementById("lastname").value;
+				
+				alert("Bienvenido " + firstname + " " + lastname);
+				
+				document.getElementById("parr").style.backgroundColor = "#88DDDD";
+				document.getElementById("parr").style.fontWeight = "bold";
+			}	
+		</script>
+	</head>
+	<body>
+		<h1>Formulario con Inner HTML asociado</h1>
+		<p>¡Escribe aquí tu nombre y apellidos para entrar en la fiesta!</p>
+		Nombre : <input type="text" id="firstname"/>
+		<br/>
+		Apellidos: <input type="text" id="lastname"/>
+		<br/>
+		<input type="button" value="Enviar datos" onclick="processData()"
+		<br/>
+		<p id="parr">Este es un párrafo especial para los que se apuntan a la fiesta</p>
+		
+	</body>
+</html>
